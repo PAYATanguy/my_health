@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "907308573726",
+    "firebase_url": "https://myhealth-innov.firebaseio.com",
+    "project_id": "myhealth-innov",
+    "storage_bucket": "myhealth-innov.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907308573726:android:f541e34eb2f36791",
+        "android_client_info": {
+          "package_name": "com.example.my_health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907308573726-8b4nphvv59gj5f97lcektrhfv7eocem9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcE8Xwr1Dp8Eip6ujcpB8dnY9PFiWvp04"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
