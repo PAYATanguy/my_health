@@ -38,4 +38,8 @@
     <string name="lbl_forgot_password">Mot de passe oublié?</string>
     <string name="forgot_password_msg">Nous avons besoin de votre email enregistré pour vous envoyez les informations de réinitialisation.</string>
     <string name="title_activity_maps">Map</string>
+    <string name="changer_de_langue">Changer de langue</string>
+    <string name="internet_check">Vérifier la connexion internet</string>
+    <string name="internet_warning">L\\\'application nécessite une connexion Internet pour fonctionner correctement!</string>
+    <string name="se_d_connecter">Se déconnecter</string>
 </resources>

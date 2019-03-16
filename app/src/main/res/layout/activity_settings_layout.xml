@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:padding="10dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/changeLanguageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_iconnu"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/changeLanguage"
+            style="@style/SettingsItem"
+            android:text="@string/changer_de_langue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/toggleLanguage"
+                style="@style/SettingsGroup">
+
+                <RadioButton
+                    android:id="@+id/FR"
+                    style="@style/SettingsOptions"
+                    android:text="🇫🇷 FR"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/EN"
+                    style="@style/SettingsOptions"
+                    android:text=" 🇬🇧 EN"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
