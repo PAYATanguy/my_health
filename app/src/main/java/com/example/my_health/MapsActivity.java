@@ -25,6 +25,25 @@ import com.google.android.gms.tasks.Task;
 
 public class MapsActivity extends MenuActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
+    private static final String TAG = "MapsActivity";
+
+    private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+    private static final String COURSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
+    private static final float DEFAULT_ZOOM = 15f;
+
+    private Boolean mLocationPermissionsGranted = false;
+    private GoogleMap mMap;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_maps);
+
+        getLocationPermission();
+    }
+
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         Toast.makeText(this, "Map is Ready", Toast.LENGTH_SHORT).show();
@@ -95,7 +114,7 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback, Go
 
         }
     }
-        /** Called when the user clicks a marker. */
+
     @Override
     public boolean onMarkerClick(final Marker marker) {
 
@@ -118,25 +137,7 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback, Go
         return false;
     }
 
-    private static final String TAG = "MapActivity";
-
-    private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
-    private static final String COURSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
-    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
-    private static final float DEFAULT_ZOOM = 15f;
-
-    //vars
-    private Boolean mLocationPermissionsGranted = false;
-    private GoogleMap mMap;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
-
-        getLocationPermission();
-    }
-
+    // Current location
     private void getDeviceLocation(){
         Log.d(TAG, "getDeviceLocation: getting the devices current location");
 
@@ -166,11 +167,13 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback, Go
         }
     }
 
+    // Camera move-transition
     private void moveCamera(LatLng latLng){
         Log.d(TAG, "moveCamera: moving the camera to: lat: " + latLng.latitude + ", lng: " + latLng.longitude );
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, MapsActivity.DEFAULT_ZOOM));
     }
 
+    // Init map
     private void initMap(){
         Log.d(TAG, "initMap: initializing map");
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
@@ -179,6 +182,7 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback, Go
         mapFragment.getMapAsync(MapsActivity.this);
     }
 
+    // location permission
     private void getLocationPermission(){
         Log.d(TAG, "getLocationPermission: getting location permissions");
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION,
