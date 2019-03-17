@@ -31,6 +31,7 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback, Go
         Log.d(TAG, "onMapReady: map is ready");
         mMap = googleMap;
 
+
         if (mLocationPermissionsGranted) {
             getDeviceLocation();
 

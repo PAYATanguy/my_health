@@ -1,15 +1,13 @@
 package com.example.my_health;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,9 +22,8 @@ public class MenuActivity extends MainActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Appel vers urgence", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
+        // Call to emergency
+        findViewById(R.id.fab).setOnClickListener(v -> dialContactPhone());
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -37,6 +34,12 @@ public class MenuActivity extends MainActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+    // Method call to
+    private void dialContactPhone() {
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "0778317534", null)));
+    }
+
 
     @Override
     public void onBackPressed() {
