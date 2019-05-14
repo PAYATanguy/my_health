@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Tables</title>
+  <title>Patient 1 - Dashboard</title>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Votre Compte Patient <sup>*</sup></div>
       </a>
 
       <!-- Divider -->
@@ -46,7 +46,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Vos Informations </span></a>
       </li>
 
       <!-- Divider -->
@@ -54,39 +54,34 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Interface
+        Informations
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <span>Modifier</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <!-- <h6 class="collapse-header"></h6> -->
+            <a class="collapse-item" href="buttons.html">Allergies</a>
+            <a class="collapse-item" href="cards.html">Opération prévu</a>
+            <a class="collapse-item" href="cards.html">Pathologies</a>
+            <a class="collapse-item" href="cards.html">Remboursement</a>
+            <a class="collapse-item" href="cards.html">Listes des médecins</a>
           </div>
         </div>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
+          <span>Paramètre </span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
+
       </li>
 
       <!-- Divider -->
@@ -94,41 +89,14 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Addons
+        Choisir un médecin
       </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item active">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Ajouter un médecin</span></a>
       </li>
 
       <!-- Divider -->
@@ -159,7 +127,7 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Rechercher..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -196,12 +164,12 @@
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
+                <span class="badge badge-danger badge-counter">1+</span>
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
-                  Alerts Center
+                  Vos alertes
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
@@ -210,8 +178,8 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    <div class="small text-gray-500">Février 12, 2019</div>
+                    <span class="font-weight-bold">Venez vite prendre rendez-vous chez votre dentiste!</span>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -221,8 +189,8 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
+                    <div class="small text-gray-500">Janvier  7, 2019</div>
+                    Votre consultation vous coutera 50€!
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -232,11 +200,11 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    <div class="small text-gray-500">December 20, 2018</div>
+                     Alert: Bienvenu sur le site! Attention, vous devez vérifier votre compte.
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Toutes vos alertes </a>
               </div>
             </li>
 
@@ -245,54 +213,44 @@
               <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
                 <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
+                <span class="badge badge-danger badge-counter">1</span>
               </a>
               <!-- Dropdown - Messages -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
-                  Message Center
+                  Message
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                    <img class="rounded-circle" src="img\infirmiere.jpg" alt="">
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    <div class="text-truncate">Bonjour, Je vous contacte pour vos informer que votre rendez-vous est confirmé.</div>
+                    <div class="small text-gray-500">Infirmière Clark, Clinique du Nord</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <img class="rounded-circle" src="img\dentiste.png" alt="">
                     <div class="status-indicator"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                    <div class="text-truncate">Bonjour, Pouvez-vous nous fournir des photocopies de votre pière d'identité pour votre premier rendez-vous </div>
+                    <div class="small text-gray-500">Dentiste Chun, Marseille</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <img class="rounded-circle" src="img\docteur.png" alt="">
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    <div class="text-truncate">Bonjour, Je vous préviens que lors de votre rendez-vous, vous avez oublié vos lunettes. </div>
+                    <div class="small text-gray-500">Docteur Généraliste Alvarez, Aix en provence. </div>
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Tous vos messages</a>
               </div>
             </li>
 
@@ -335,493 +293,607 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+          <h1 class="h3 mb-2 text-gray-800">Vos médecins</h1>
+          <p class="mb-4">Vous trouverez sur cette page, la liste potentielle de vos médecin, vous n'aurez qu'a les ajouter à votre liste!</p>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Médecins</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Nom</th>
+                      <th>Spécialitée</th>
+                      <th>Localisation</th>
+                      <th>Prendre rendez-vous</th>
+                      <th>Ajouter à vos médecins </th>
+                      <th>Prix consultation moyenne</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                        <th>Nom</th>
+                        <th>Spécialitée</th>
+                        <th>Localisation</th>
+                        <th>Prendre rendez-vous</th>
+                        <th>Ajouter à vos médecins </th>
+                        <th> Prix consultation moyenne</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
                       <td>Tiger Nixon</td>
-                      <td>System Architect</td>
+                      <td>Médecin généraliste</td>
                       <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$32,8</td>
                     </tr>
                     <tr>
                       <td>Garrett Winters</td>
-                      <td>Accountant</td>
+                      <td>Médecin Généraliste</td>
                       <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$70,750</td>
                     </tr>
                     <tr>
                       <td>Ashton Cox</td>
-                      <td>Junior Technical Author</td>
+                      <td>Dentiste</td>
                       <td>San Francisco</td>
-                      <td>66</td>
-                      <td>2009/01/12</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$86,000</td>
                     </tr>
                     <tr>
                       <td>Cedric Kelly</td>
-                      <td>Senior Javascript Developer</td>
+                      <td>Addictologue</td>
                       <td>Edinburgh</td>
-                      <td>22</td>
-                      <td>2012/03/29</td>
-                      <td>$433,060</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$43,06</td>
                     </tr>
                     <tr>
                       <td>Airi Satou</td>
-                      <td>Accountant</td>
+                      <td>Anatomiste</td>
                       <td>Tokyo</td>
-                      <td>33</td>
-                      <td>2008/11/28</td>
-                      <td>$162,700</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$60</td>
                     </tr>
                     <tr>
                       <td>Brielle Williamson</td>
-                      <td>Integration Specialist</td>
+                      <td>Dentiste</td>
                       <td>New York</td>
-                      <td>61</td>
-                      <td>2012/12/02</td>
-                      <td>$372,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$37</td>
                     </tr>
                     <tr>
                       <td>Herrod Chandler</td>
-                      <td>Sales Assistant</td>
+                      <td>Neurologue</td>
                       <td>San Francisco</td>
-                      <td>59</td>
-                      <td>2012/08/06</td>
-                      <td>$137,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$37,500</td>
                     </tr>
                     <tr>
                       <td>Rhona Davidson</td>
-                      <td>Integration Specialist</td>
-                      <td>Tokyo</td>
-                      <td>55</td>
-                      <td>2010/10/14</td>
-                      <td>$327,900</td>
+                      <td>Orthopédiste</td>
+                      <td>France</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$32</td>
                     </tr>
                     <tr>
                       <td>Colleen Hurst</td>
-                      <td>Javascript Developer</td>
+                      <td>Oto-rhino-laryngologiste‎ </td>
                       <td>San Francisco</td>
-                      <td>39</td>
-                      <td>2009/09/15</td>
-                      <td>$205,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$50,500</td>
                     </tr>
                     <tr>
                       <td>Sonya Frost</td>
-                      <td>Software Engineer</td>
+                      <td>Cancérologue </td>
                       <td>Edinburgh</td>
-                      <td>23</td>
-                      <td>2008/12/13</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$103,600</td>
                     </tr>
                     <tr>
                       <td>Jena Gaines</td>
-                      <td>Office Manager</td>
+                      <td>Dermatologue</td>
                       <td>London</td>
-                      <td>30</td>
-                      <td>2008/12/19</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$90,560</td>
                     </tr>
                     <tr>
                       <td>Quinn Flynn</td>
-                      <td>Support Lead</td>
+                      <td>Gynécologue</td>
                       <td>Edinburgh</td>
-                      <td>22</td>
-                      <td>2013/03/03</td>
-                      <td>$342,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$42,000</td>
                     </tr>
                     <tr>
                       <td>Charde Marshall</td>
-                      <td>Regional Director</td>
+                      <td>Cancérologue</td>
                       <td>San Francisco</td>
-                      <td>36</td>
-                      <td>2008/10/16</td>
-                      <td>$470,600</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$70,600</td>
                     </tr>
                     <tr>
                       <td>Haley Kennedy</td>
-                      <td>Senior Marketing Designer</td>
+                      <td>Pneumologue</td>
                       <td>London</td>
-                      <td>43</td>
-                      <td>2012/12/18</td>
-                      <td>$313,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$86,500</td>
                     </tr>
                     <tr>
                       <td>Tatyana Fitzpatrick</td>
-                      <td>Regional Director</td>
+                      <td>Hépato-gastro-entérologue‎</td>
                       <td>London</td>
-                      <td>19</td>
-                      <td>2010/03/17</td>
-                      <td>$385,750</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$85,750</td>
                     </tr>
                     <tr>
                       <td>Michael Silva</td>
-                      <td>Marketing Designer</td>
+                      <td>Néphrologue</td>
                       <td>London</td>
-                      <td>66</td>
-                      <td>2012/11/27</td>
-                      <td>$198,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$98,500</td>
                     </tr>
                     <tr>
                       <td>Paul Byrd</td>
-                      <td>Chief Financial Officer (CFO)</td>
+                      <td>Immunologiste‎</td>
                       <td>New York</td>
-                      <td>64</td>
-                      <td>2010/06/09</td>
-                      <td>$725,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$72,000</td>
                     </tr>
                     <tr>
                       <td>Gloria Little</td>
-                      <td>Systems Administrator</td>
+                      <td>Radiologue</td>
                       <td>New York</td>
-                      <td>59</td>
-                      <td>2009/04/10</td>
-                      <td>$237,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$37,500</td>
                     </tr>
                     <tr>
                       <td>Bradley Greer</td>
-                      <td>Software Engineer</td>
+                      <td>Médecin Généraliste</td>
                       <td>London</td>
-                      <td>41</td>
-                      <td>2012/10/13</td>
-                      <td>$132,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$32,000</td>
                     </tr>
                     <tr>
                       <td>Dai Rios</td>
-                      <td>Personnel Lead</td>
+                      <td>Pédiatre</td>
                       <td>Edinburgh</td>
-                      <td>35</td>
-                      <td>2012/09/26</td>
-                      <td>$217,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$21,500</td>
                     </tr>
                     <tr>
                       <td>Jenette Caldwell</td>
-                      <td>Development Lead</td>
+                      <td>Pédiatre</td>
                       <td>New York</td>
-                      <td>30</td>
-                      <td>2011/09/03</td>
-                      <td>$345,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$45,000</td>
                     </tr>
                     <tr>
                       <td>Yuri Berry</td>
-                      <td>Chief Marketing Officer (CMO)</td>
+                      <td>Médecin du sport</td>
                       <td>New York</td>
-                      <td>40</td>
-                      <td>2009/06/25</td>
-                      <td>$675,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$75,000</td>
                     </tr>
                     <tr>
                       <td>Caesar Vance</td>
-                      <td>Pre-Sales Support</td>
+                      <td>Orthopédiste</td>
                       <td>New York</td>
-                      <td>21</td>
-                      <td>2011/12/12</td>
-                      <td>$106,450</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$60,450</td>
                     </tr>
                     <tr>
                       <td>Doris Wilder</td>
-                      <td>Sales Assistant</td>
+                      <td>Caridologue</td>
                       <td>Sidney</td>
-                      <td>23</td>
-                      <td>2010/09/20</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$85,600</td>
                     </tr>
                     <tr>
                       <td>Angelica Ramos</td>
-                      <td>Chief Executive Officer (CEO)</td>
+                      <td>Dentiste</td>
                       <td>London</td>
-                      <td>47</td>
-                      <td>2009/10/09</td>
-                      <td>$1,200,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$20,0</td>
                     </tr>
                     <tr>
                       <td>Gavin Joyce</td>
-                      <td>Developer</td>
+                      <td>Gynécologue</td>
                       <td>Edinburgh</td>
-                      <td>42</td>
-                      <td>2010/12/22</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$92,575</td>
                     </tr>
                     <tr>
                       <td>Jennifer Chang</td>
-                      <td>Regional Director</td>
+                      <td>Ophtamologue</td>
                       <td>Singapore</td>
-                      <td>28</td>
-                      <td>2010/11/14</td>
-                      <td>$357,650</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$57,650</td>
                     </tr>
                     <tr>
                       <td>Brenden Wagner</td>
-                      <td>Software Engineer</td>
+                      <td>Médecin généraliste</td>
                       <td>San Francisco</td>
-                      <td>28</td>
-                      <td>2011/06/07</td>
-                      <td>$206,850</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$20,850</td>
                     </tr>
                     <tr>
                       <td>Fiona Green</td>
-                      <td>Chief Operating Officer (COO)</td>
+                      <td>Psychiatre</td>
                       <td>San Francisco</td>
-                      <td>48</td>
-                      <td>2010/03/11</td>
-                      <td>$850,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$85,000</td>
                     </tr>
                     <tr>
                       <td>Shou Itou</td>
-                      <td>Regional Marketing</td>
+                      <td>Dermatologue</td>
                       <td>Tokyo</td>
-                      <td>20</td>
-                      <td>2011/08/14</td>
-                      <td>$163,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$63,000</td>
                     </tr>
                     <tr>
                       <td>Michelle House</td>
-                      <td>Integration Specialist</td>
+                      <td>Sexologue</td>
                       <td>Sidney</td>
-                      <td>37</td>
-                      <td>2011/06/02</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$95,400</td>
                     </tr>
                     <tr>
                       <td>Suki Burks</td>
-                      <td>Developer</td>
+                      <td>Chirurgien</td>
                       <td>London</td>
-                      <td>53</td>
-                      <td>2009/10/22</td>
-                      <td>$114,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$41,500</td>
                     </tr>
                     <tr>
                       <td>Prescott Bartlett</td>
-                      <td>Technical Author</td>
+                      <td>Ophtamologue</td>
                       <td>London</td>
-                      <td>27</td>
-                      <td>2011/05/07</td>
-                      <td>$145,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$45,000</td>
                     </tr>
                     <tr>
                       <td>Gavin Cortez</td>
-                      <td>Team Leader</td>
+                      <td>Dermatologue</td>
                       <td>San Francisco</td>
-                      <td>22</td>
-                      <td>2008/10/26</td>
-                      <td>$235,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$35,500</td>
                     </tr>
                     <tr>
                       <td>Martena Mccray</td>
-                      <td>Post-Sales support</td>
+                      <td>Anesthésiste</td>
                       <td>Edinburgh</td>
-                      <td>46</td>
-                      <td>2011/03/09</td>
-                      <td>$324,050</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$34,050</td>
                     </tr>
                     <tr>
                       <td>Unity Butler</td>
-                      <td>Marketing Designer</td>
+                      <td>Orthopédiste</td>
                       <td>San Francisco</td>
-                      <td>47</td>
-                      <td>2009/12/09</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$85,675</td>
                     </tr>
                     <tr>
                       <td>Howard Hatfield</td>
-                      <td>Office Manager</td>
+                      <td>Chirurgien</td>
                       <td>San Francisco</td>
-                      <td>51</td>
-                      <td>2008/12/16</td>
-                      <td>$164,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$64,500</td>
                     </tr>
                     <tr>
                       <td>Hope Fuentes</td>
-                      <td>Secretary</td>
+                      <td>Cardiologue</td>
                       <td>San Francisco</td>
-                      <td>41</td>
-                      <td>2010/02/12</td>
-                      <td>$109,850</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$90,850</td>
                     </tr>
                     <tr>
                       <td>Vivian Harrell</td>
-                      <td>Financial Controller</td>
+                      <td>Gynécologue</td>
                       <td>San Francisco</td>
-                      <td>62</td>
-                      <td>2009/02/14</td>
-                      <td>$452,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$52,500</td>
                     </tr>
                     <tr>
                       <td>Timothy Mooney</td>
-                      <td>Office Manager</td>
+                      <td>Obstétricien</td>
                       <td>London</td>
-                      <td>37</td>
-                      <td>2008/12/11</td>
-                      <td>$136,200</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$36,200</td>
                     </tr>
                     <tr>
                       <td>Jackson Bradshaw</td>
-                      <td>Director</td>
+                      <td>Médecin Généraliste</td>
                       <td>New York</td>
-                      <td>65</td>
-                      <td>2008/09/26</td>
-                      <td>$645,750</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$45,750</td>
                     </tr>
                     <tr>
                       <td>Olivia Liang</td>
                       <td>Support Engineer</td>
                       <td>Singapore</td>
-                      <td>64</td>
-                      <td>2011/02/03</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$234,500</td>
                     </tr>
                     <tr>
                       <td>Bruno Nash</td>
-                      <td>Software Engineer</td>
+                      <td>Ophtamologue</td>
                       <td>London</td>
-                      <td>38</td>
-                      <td>2011/05/03</td>
-                      <td>$163,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$63,500</td>
                     </tr>
                     <tr>
                       <td>Sakura Yamamoto</td>
-                      <td>Support Engineer</td>
+                      <td>Médecin du Sport</td>
                       <td>Tokyo</td>
-                      <td>37</td>
-                      <td>2009/08/19</td>
-                      <td>$139,575</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$70,575</td>
                     </tr>
                     <tr>
                       <td>Thor Walton</td>
-                      <td>Developer</td>
+                      <td>Chirurgien</td>
                       <td>New York</td>
-                      <td>61</td>
-                      <td>2013/08/11</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$98,540</td>
                     </tr>
                     <tr>
                       <td>Finn Camacho</td>
-                      <td>Support Engineer</td>
+                      <td>Psychiatre</td>
                       <td>San Francisco</td>
-                      <td>47</td>
-                      <td>2009/07/07</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$87,500</td>
                     </tr>
                     <tr>
                       <td>Serge Baldwin</td>
-                      <td>Data Coordinator</td>
+                      <td>Dentiste</td>
                       <td>Singapore</td>
-                      <td>64</td>
-                      <td>2012/04/09</td>
-                      <td>$138,575</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$38,575</td>
                     </tr>
                     <tr>
                       <td>Zenaida Frank</td>
-                      <td>Software Engineer</td>
+                      <td>Médecin généraliste</td>
                       <td>New York</td>
-                      <td>63</td>
-                      <td>2010/01/04</td>
-                      <td>$125,250</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$25,250</td>
                     </tr>
                     <tr>
                       <td>Zorita Serrano</td>
-                      <td>Software Engineer</td>
+                      <td>Dentiste</td>
                       <td>San Francisco</td>
-                      <td>56</td>
-                      <td>2012/06/01</td>
-                      <td>$115,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$51,000</td>
                     </tr>
                     <tr>
                       <td>Jennifer Acosta</td>
-                      <td>Junior Javascript Developer</td>
+                      <td>Chirugien</td>
                       <td>Edinburgh</td>
-                      <td>43</td>
-                      <td>2013/02/01</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$75,650</td>
                     </tr>
                     <tr>
                       <td>Cara Stevens</td>
-                      <td>Sales Assistant</td>
+                      <td>Dentiste</td>
                       <td>New York</td>
-                      <td>46</td>
-                      <td>2011/12/06</td>
-                      <td>$145,600</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$45,600</td>
                     </tr>
                     <tr>
                       <td>Hermione Butler</td>
-                      <td>Regional Director</td>
+                      <td>Dermatologue</td>
                       <td>London</td>
-                      <td>47</td>
-                      <td>2011/03/21</td>
-                      <td>$356,250</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$35,250</td>
                     </tr>
                     <tr>
                       <td>Lael Greer</td>
-                      <td>Systems Administrator</td>
+                      <td>Anesthésiste</td>
                       <td>London</td>
-                      <td>21</td>
-                      <td>2009/02/27</td>
-                      <td>$103,500</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$30,500</td>
                     </tr>
                     <tr>
                       <td>Jonas Alexander</td>
-                      <td>Developer</td>
+                      <td>Chirurgien</td>
                       <td>San Francisco</td>
-                      <td>30</td>
-                      <td>2010/07/14</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
                       <td>$86,500</td>
                     </tr>
                     <tr>
                       <td>Shad Decker</td>
-                      <td>Regional Director</td>
+                      <td>Neurologue</td>
                       <td>Edinburgh</td>
-                      <td>51</td>
-                      <td>2008/11/13</td>
-                      <td>$183,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$83,000</td>
                     </tr>
                     <tr>
                       <td>Michael Bruce</td>
-                      <td>Javascript Developer</td>
+                      <td>Pédiatre</td>
                       <td>Singapore</td>
-                      <td>29</td>
-                      <td>2011/06/27</td>
-                      <td>$183,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$83,000</td>
                     </tr>
                     <tr>
                       <td>Donna Snider</td>
-                      <td>Customer Support</td>
+                      <td>Homéopathe</td>
                       <td>New York</td>
-                      <td>27</td>
-                      <td>2011/01/25</td>
-                      <td>$112,000</td>
+                      <td><i class="fas fa-calendar fa-2x text-gray-300"></i></td>
+                      <td><a href="#" class="btn btn-success btn-circle btn-sm">
+                    <i class="fas fa-check"></i>
+                  </a></td>
+                      <td>$52,000</td>
                     </tr>
                   </tbody>
                 </table>
